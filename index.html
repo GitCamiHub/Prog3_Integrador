@@ -26,8 +26,8 @@
     <div class="container-principalHeader">
       <div class="container-contentHeader">
         <div class="headerSearch">
-          <input class="inputHeader" type="text" placeholder="Ingrese un elemento">
-          <button class="buttonSearch">Buscar<span class="material-symbols-outlined">
+          <input class="inputHeader" id="inputHeader" type="text" placeholder="Ingrese un elemento">
+          <button id="buttonSearch" class="buttonSearch">Buscar<span class="material-symbols-outlined">
               search
             </span></button>
         </div>
@@ -73,10 +73,10 @@
           <input type="text" placeholder="Ingrese una imagen" id="img" required>
           <input type="number" placeholder="0" id="precio" min="0" required>
           <select id="categoria" required>
-            <option value="">Seleccione una categoría</option>
-            <option value="categoria1">Hamburguesas</option>
-            <option value="categoria2">Papas</option>
-            <option value="categoria2">Gaseosas</option>
+            <option value="" default>Seleccione una categoría</option>
+            <option value="Hamburguesas">Hamburguesas</option>
+            <option value="Papas">Papas</option>
+            <option value="Gaseosas">Gaseosas</option>
           </select>
         </div>
         <div class="containerButtonsPopUp">

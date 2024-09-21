@@ -2,8 +2,8 @@
 // CATEGORIA
 
 import { categoriaActiva } from "../../main.js";
-import { handleGetProductLocalStorage } from "./persistence/localStorage.js";
-import { handleRenderList } from "./views/store.js";
+import { handleGetProductLocalStorage } from "../persistence/localStorage.js";
+import { handleRenderList } from "../views/store.js";
 
 const handleFilterProductByCategory = (categoryIn) => {
     const products = handleGetProductLocalStorage();
@@ -31,7 +31,7 @@ const handleFilterProductByCategory = (categoryIn) => {
             handleRenderList(resultPrecioMenor);
             break;
     }
-}
+};
 
 
 // Render de la vista categorías
@@ -72,6 +72,6 @@ export const renderCategories = () => {
                     el.classList.add("liActive");
                 }
             }
-        })
-    }
+        });
+    };
 };

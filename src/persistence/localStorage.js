@@ -1,4 +1,6 @@
+
 /* LOCAL STORAGE */
+
 // Recibir un producto
 
 export const handleGetProductLocalStorage = () => {
@@ -15,26 +17,29 @@ export const handleGetProductLocalStorage = () => {
 
 // Recibir un producto
 export const setInLocalStorage = (productIn) => {
+
+    if(productIn){
     // Traer elementos
-
-    let productsInLocal = handleGetProductLocalStorage() || [];
-
+    let productsInLocal = handleGetProductLocalStorage();
+    console.log(productIn);
+    
     const existingIndex = productsInLocal.findIndex(
         (productsLocal) => productsLocal.id === productIn.id
     );
+    
 
-// Verificar si el elemento existe, si existe reemplazarse, si no existe, agregarse
+    // Verificar si el elemento existe, si existe reemplazarse, si no existe, agregarse
 
-if (existingIndex !== -1) {
-    productsInLocal[existingIndex] = productIn;
+    if (existingIndex !== -1) {
+        productsInLocal[existingIndex] = productIn;
 
-} else {
-    productsInLocal.push(productIn);
+    } else {
+        productsInLocal.push(productIn);
 
-}
+    }
 
-// Setear un nuevo array
-localStorage.setItem("products", JSON.stringify(productsInLocal));
+    // Setear un nuevo array
+    localStorage.setItem("products", JSON.stringify(productsInLocal));
 
-
+    }
 };

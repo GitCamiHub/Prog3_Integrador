@@ -1,7 +1,10 @@
 /* STORE */
 
-import { openModal } from "../../../main.js";
-import { handleGetProductLocalStorage } from "../persistence/localStorage.js"
+import { setProductoActivo } from "../../main.js";
+import { handleGetProductLocalStorage } from "../persistence/localStorage.js";
+import { openModal } from "./modal.js";
+
+
 
 // Funcion que se encarga de traer elementos y llamar al render
 export const handleGetProductsToStore = () => {
@@ -38,7 +41,7 @@ export const handleRenderList = (productosIn) => {
         <h2>${producto.nombre}</h2>
         </div>
         <div class='targetProps'>
-        <p><b>Precio:<b/>$ ${producto.precio}</p>
+        <p><b>Precio:</b>$ ${producto.precio}</p>
         </div>
         </div>
          </div>`;
