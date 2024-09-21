@@ -11,7 +11,7 @@ Funcionalidades del programa:
  
 - **Barra de búsqueda:** Podemos escribir el nombre del producto que queremos buscar y, al presionar el botón "Buscar", se visualizarán solo los productos que coincidan con el término ingresado.
 
-- *Barra lateral Categorías:*
+- **Barra lateral Categorías:**
    - "Hamburguesas","Papas" y "Gaseosas": Muestran solo los productos que corresponden a la categoría seleccionada.
    - "Todos los productos": Muestra todos los productos
    - "Mayor precio": Ordena los productos dentro de una categoría del mayor al menor precio.
